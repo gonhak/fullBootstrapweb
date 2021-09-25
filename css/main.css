@@ -1,0 +1,382 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.shadow-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.shadow-bg-dark {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.shadow-bg-light {
+  background-color: rgba(42, 36, 36, 0.6);
+}
+
+.shadow-bg-contact {
+  background-color: rgba(49, 2, 49, 0.6);
+}
+
+.navbar {
+  height: 10vh;
+  background-color: rgba(63, 61, 61, 0.7);
+  z-index: 9999;
+}
+
+.navbar .container-fluid h2 {
+  color: white;
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+.navbar .container-fluid h2 span {
+  color: orangered;
+}
+
+.navbar .container-fluid .navbar-nav a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px black;
+  font-weight: bold;
+  -webkit-transition: color .5s ease, text-shadow .3s ease;
+  transition: color .5s ease, text-shadow .3s ease;
+}
+
+.navbar .container-fluid .navbar-nav a:hover {
+  color: orangered;
+  text-shadow: 2px 2px 4px black;
+}
+
+.header-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 75vh;
+  background-image: url(../img/header/header-lq.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.header-img .header-text {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.header-img .header-text h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+.header-img .header-text h2 span {
+  color: orangered;
+}
+
+section {
+  scroll-margin: 76.8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section .card-group .card {
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.offert {
+  position: absolute;
+  top: 75vh;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/offert/offert-bg-hq.jpg);
+  z-index: 222;
+}
+
+.offert .offert-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.offert .offert-boxes .offert-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+  z-index: 0;
+}
+
+.offert .offert-boxes .offert-box .meal-text {
+  position: relative;
+  z-index: 1;
+}
+
+.offert .offert-boxes .offert-box .meal-text h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: orangered;
+  text-shadow: 0 0 5px black;
+}
+
+.offert .offert-boxes .offert-box .meal-text p {
+  font-size: 1.6rem;
+}
+
+.offert .offert-boxes .first-meal {
+  background-image: url(../img/offert/croissant.jpg);
+}
+
+.offert .offert-boxes .second-meal {
+  background-image: url(../img/offert/lody.jpg);
+}
+
+.offert .offert-boxes .thirst-meal {
+  background-image: url(../img/offert/muffins.jpg);
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 175vh;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/contact/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.contact .contact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-size: 2.2rem;
+  height: 35%;
+  width: 50%;
+  color: orangered;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  z-index: 1;
+}
+
+.contact .contact-text h2 {
+  font-size: 2.8rem;
+}
+
+.contact .mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.contact .mapa .mapa-text h2 {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-size: 4.2rem;
+}
+
+.contact .mapa .mapa-text h2 span {
+  color: orangered;
+}
+
+.contact .mapa .mapa-google {
+  width: 75%;
+  height: 65%;
+  border: 5px solid orangered;
+  overflow: hidden;
+  border-radius: 25px;
+  -webkit-box-shadow: 8px 8px 10px black;
+          box-shadow: 8px 8px 10px black;
+}
+
+.contact .mapa .mapa-google iframe {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  top: 275vh;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: black;
+}
+
+footer .footer-text {
+  font-size: 1.8rem;
+  color: white;
+  line-height: 100px;
+}
+
+footer .footer-text span {
+  color: orangered;
+  text-shadow: 5px 5px 10px black;
+}
+
+@media (min-width: 320px) {
+  .navbar {
+    height: 76.8px;
+  }
+  .navbar .container-fluid h2 {
+    font-size: 1.8rem;
+  }
+  .navbar .container-fluid .navbar-nav a {
+    font-size: 1.4rem;
+  }
+  .offert .offert-boxes .offert-box .meal-text h3 {
+    font-size: 1.8rem;
+  }
+  .offert .offert-boxes .offert-box .meal-text p {
+    font-size: 1.4rem;
+  }
+  .contact .contact-text h2 {
+    font-size: 1.8rem;
+  }
+  .contact .contact-text p {
+    font-size: 1.4rem;
+  }
+  .contact .contact-text p span {
+    font-size: 1.2rem;
+  }
+  .contact .mapa .mapa-text h2 {
+    font-size: 2.2rem;
+  }
+  footer .footer-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 464px) {
+  .navbar .container-fluid h2 {
+    font-size: 2.6rem;
+  }
+  .navbar .container-fluid .navbar-nav a {
+    font-size: 2.2rem;
+  }
+  .header-img {
+    background-image: url(../img/header/haeder-hq.jpg);
+  }
+  .header-img .header-text h2 {
+    font-size: 2.8rem;
+  }
+  .header-img .header-text p {
+    font-size: 1.6rem;
+  }
+  .contact .contact-text h2 {
+    font-size: 5rem;
+  }
+  .contact .contact-text p {
+    font-size: 2.2rem;
+  }
+  .contact .contact-text p span {
+    font-size: 1.6rem;
+  }
+  .contact .mapa .mapa-text h2 {
+    font-size: 4rem;
+  }
+  footer .footer-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offert .offert-boxes .offert-box {
+    height: 40vh;
+  }
+  .contact .mapa .mapa-google {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

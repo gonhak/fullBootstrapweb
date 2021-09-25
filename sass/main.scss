@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// ogólny
+
+.shadow-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shadow-bg-dark {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.shadow-bg-light {
+    background-color: rgba(42, 36, 36, 0.6);
+}
+
+.shadow-bg-contact {
+    background-color: rgba(49, 2, 49, 0.6);
+}
+
+// nawigacja
+
+.navbar {
+    height: 10vh;
+    background-color: rgba(63, 61, 61, 0.7);
+    z-index: 9999;
+
+    .container-fluid {
+
+        h2 {
+            color: white;
+            font-size: 2.6rem;
+            text-shadow: 2px 2px 4px black;
+
+            span {
+                color: orangered;
+            }
+        }
+
+        .navbar-nav {
+            a {
+                font-size: 2.2rem;
+                text-decoration: none;
+                text-shadow: 2px 2px 4px black;
+                font-weight: bold;
+                transition: color .5s ease,
+                    text-shadow .3s ease;
+            }
+
+            a:hover {
+                color: orangered;
+                text-shadow: 2px 2px 4px black;
+            }
+        }
+    }
+}
+
+// HEADER
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75vh;
+    background-image: url(../img/header/header-lq.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    .header-text {
+        color: white;
+        text-align: center;
+        z-index: 1;
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 4px black;
+
+            span {
+                color: orangered;
+            }
+        }
+    }
+}
+
+// SEKCJE
+
+section {
+    scroll-margin: 76.8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .card-group {
+
+        .card {
+            border-radius: 45px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+// OFERTY
+
+.offert {
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/offert/offert-bg-hq.jpg);
+    z-index: 222;
+
+    .offert-boxes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .offert-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 10px 10px 10px black;
+            z-index: 0;
+
+            .meal-text {
+                position: relative;
+                z-index: 1;
+
+                h3 {
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: orangered;
+                    text-shadow: 0 0 5px black;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .first-meal {
+            background-image: url(../img/offert/croissant.jpg);
+        }
+
+        .second-meal {
+            background-image: url(../img/offert/lody.jpg);
+        }
+
+        .thirst-meal {
+            background-image: url(../img/offert/muffins.jpg);
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 175vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/contact/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 2.2rem;
+        height: 35%;
+        width: 50%;
+        color: orangered;
+        text-shadow: 2px 2px 4px black;
+        text-align: center;
+        z-index: 1;
+
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+
+        .mapa-text {
+            h2 {
+                color: white;
+                text-shadow: 5px 5px 10px black;
+                font-size: 4.2rem;
+
+                span {
+                    color: orangered;
+                }
+            }
+        }
+
+        .mapa-google {
+            width: 75%;
+            height: 65%;
+            border: 5px solid orangered;
+            overflow: hidden;
+            border-radius: 25px;
+            box-shadow: 8px 8px 10px black;
+
+            iframe {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    top: 275vh;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: black;
+
+    .footer-text {
+        font-size: 1.8rem;
+        color: white;
+        line-height: 100px;
+
+        span {
+            color: orangered;
+            text-shadow: 5px 5px 10px black;
+        }
+    }
+}
+
+@media (min-width:320px) {
+    .navbar {
+        height: 76.8px;
+
+        .container-fluid {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .navbar-nav {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .offert {
+        .offert-boxes {
+            .offert-box {
+                .meal-text {
+                    h3 {
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        .contact-text {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .mapa {
+            .mapa-text {
+                h2 {
+                    font-size: 2.2rem;
+                }
+
+            }
+        }
+    }
+
+    footer{
+        .footer-text{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+
+@media (min-width:464px) {
+    .navbar {
+        // height: 10vh;
+
+        .container-fluid {
+            h2 {
+                font-size: 2.6rem;
+            }
+
+            .navbar-nav {
+                a {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+
+    .header-img {
+        background-image: url(../img/header/haeder-hq.jpg);
+
+        .header-text {
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .contact {
+        .contact-text {
+            h2 {
+                font-size: 5rem;
+            }
+
+            p {
+                font-size: 2.2rem;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .mapa {
+            .mapa-text {
+                h2 {
+                    font-size: 4rem;
+                }
+
+            }
+        }
+    }
+
+    footer {
+        .footer-text {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .offert {
+        .offert-boxes {
+            .offert-box {
+                height: 40vh;
+            }
+        }
+    }
+
+    .contact {
+        .mapa {
+            .mapa-google {
+                width: 50%;
+            }
+        }
+    }
+}
